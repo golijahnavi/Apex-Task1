@@ -1,0 +1,105 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Bites Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tasty Bites Restaurant</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Welcome to Tasty Bites!</h2>
+            <p>Tasty Bites Restaurant offers a wide variety of delicious dishes to satisfy your cravings.</p>
+            <h3>Home Information:</h3>
+            <p>Phone: 8845739967</p>
+            <p>Email: <a href="golijahnavi08@gmail.com">golijahnavi08gmail.com</a></p>
+            <p>Address: 6_43,Koduru,Krishna,India</p>
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="assets/restaurant interior.jpeg" alt="Restaurant Interior">
+                    <p>Restaurant Interior</p>
+                </div>
+                <div class="image-item">
+                    <img src="assets/restaurant dining area.jpeg" alt="Kitchen">
+                    <p>Kitchen</p>
+                </div>
+            </div>
+            <button onclick="showMenu()" class="button">View Our Menu</button>
+            <button onclick="showContact()" class="button">Contact Us</button>
+        </section>
+        
+        <section id="menu" style="display: none;">
+            <h2>Our Menu</h2>
+            <h3>Menu Information:</h3>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="assets/Burger.jpeg" alt="Burger">
+                    <p>Burgers</p>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/sandwich.jpeg" alt="Sandwich">
+                    <p>Sandwiches</p>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/salads.jpeg" alt="Salad">
+                    <p>Salads</p>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/desserts.jpeg" alt="Desserts">
+                    <p>Desserts</p>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/biryani.jpeg" alt="Biryani">
+                    <p>Biryani</p>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/fried rice.jpeg" alt="Fried Rice">
+                    <p>Fried Rice</p>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/manchuria.jpeg" alt="Manchuria">
+                    <p>Manchuria</p>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/noodles.jpeg" alt="Noodles">
+                    <p>Noodles</p>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/chapathi.jpeg" alt="Chapathi">
+                    <p>Chapathi</p>
+                </div>
+                <!-- Other menu items here -->
+            </div>
+        </section>
+        
+        <section id="contact" style="display: none;">
+            <h2>Get in Touch</h2>
+            <h3>Contact Information:</h3>
+            <p>Phone: 8845739967</p>
+            <p>Email: <a href="golijahnavi08@gmail.com">golijahnavi08gmail.com</a></p>
+            <p>Address: 6_43,Koduru,Krishna,India</p>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Tasty Bites Restaurant</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
