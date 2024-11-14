@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page with Quiz, Weather & Jokes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#quiz-section" class="nav-link">Quiz</a></li>
+                <li><a href="#joke-section" class="nav-link">Joke</a></li>
+                <li><a href="#weather-section" class="nav-link">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home" class="grid-item">
+            <h2>Welcome to the Art Gallery</h2>
+            <p>This gallery explores the beauty and intricacies of nature through art. Discover how artists interpret the natural world and convey its wonders through various mediums.</p>
+        </section>
+
+        <section id="gallery" class="grid-item">
+            <h2>Nature Gallery</h2>
+            <div class="gallery-grid">
+                <img src="assets/1.jfif" alt="Nature Art 1">
+                <img src="assets/2.webp" alt="Nature Art 2">
+                <img src="assets/3.avif" alt="Nature Art 3">
+                <img src="assets/4.jfif" alt="Nature Art 4">
+                <img src="assets/5.avif" alt="Nature Art 5">
+                <img src="assets/6.jfif" alt="Nature Art 6">
+                <img src="assets/7.jfif" alt="Nature Art 7">
+                <img src="assets/8.jpg" alt="Nature Art 8">
+                <img src="assets/9.jfif" alt="Nature Art 9">
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz-section" class="section">
+            <div class="quiz-container" id="quizContainer">
+                <h3>Quiz Time</h3>
+                <img id="quizImage" class="quiz-image" src="" alt="Quiz Clue">
+                <p id="question" class="question"></p>
+                <div id="options" class="options"></div>
+                <div class="result" id="quizResult"></div>
+            </div>
+        </section>
+
+        <!-- Joke Section -->
+        <section id="joke-section" class="section">
+            <div class="joke-container">
+                <h3>Joke Time</h3>
+                <p id="jokeEmoji">😂</p>
+                <p id="joke"></p>
+                <button onclick="fetchJoke()">Get Another Joke</button>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather-section" class="section">
+            <div class="api-container">
+                <h3>Weather</h3>
+                <input type="text" id="cityInput" placeholder="Enter city name" />
+                <button onclick="getWeather()">Get Weather</button>
+                <p id="weather"></p>
+            </div>
+        </section>
+        <section id="galleryCarousel" class="gallery-section">
+            <div class="carousel-container">
+                <h3>Gallery Carousel</h3>
+                <div class="carousel-images">
+                    <img src="assets/a.jfif" alt="Image 1" class="carousel-image">
+                    <img src="assets/b.jfif" alt="Image 2" class="carousel-image">
+                    <img src="assets/c.jfif" alt="Image 3" class="carousel-image">
+                    <img src="assets/d.png" alt="Image 4" class="carousel-image">
+                </div>
+                <button class="carousel-btn left" onclick="moveCarousel(-1)">&#10094;</button>
+                <button class="carousel-btn right" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </section>
+        
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Interactive Web Page</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+/* General Body Styling */
